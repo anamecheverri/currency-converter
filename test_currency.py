@@ -14,3 +14,5 @@ def test_convert():
     assert convert(rates, 1, "USD", "USD") == 1
     assert convert(rates, 1, "USD", "EUR") == 0.74
     assert convert(rates, 1, "POU", "EUR") == 0
+    assert convert(rates, 2, "USD", "EUR") == 1.48
+    assert convert(rates, 2, "EUR", "JPY") == 291.898
